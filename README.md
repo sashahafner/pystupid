@@ -1,9 +1,10 @@
 # pystupid
-Some notes on idiotic Python syntax and more.
+Some notes on Python syntax and more.
+These are on topics that are or were confusing to me, an R and Fortran user, while learning Python.
 
-# Indexing arrays
-The 0 index for the first element is strange enough, but at least that matches C++ and probably more.
-But this "slice" behavior with numpy arrays is even stranger.
+# Indexing objects
+The 0 index for the first element is strange enough, but at least that matches C and probably more (some reasons for that here: <https://developerinsider.co/why-does-the-indexing-of-array-start-with-zero-in-c/>).
+But this "slice" behavior with numpy arrays and apparently other structures seems even stranger.
 
 ```
 >>> import numpy as np
@@ -14,7 +15,7 @@ But this "slice" behavior with numpy arrays is even stranger.
 3
 ```
 
-OK, so to extract all 3 elements, we might expect:
+OK, so to extract all 3 elements, I would expect:
 
 ```
 >>> x[0:2]
@@ -29,4 +30,5 @@ We need:
 [1, 2, 3]
 ```
 
+More on use of colon in Python here: <https://www.askpython.com/python/examples/colon-in-python>.
 
