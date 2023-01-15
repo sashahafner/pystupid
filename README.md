@@ -53,3 +53,37 @@ python3 -m pdb somescript.py
 (It seems `breakpoint()` uses the pdb package anyway.)
 But this will only step through the lines in somescript.py--don't try to use it to debug a function that is defined in a separate script and loaded in somescript.py.
 
+# Loading function definitions ("modules")
+I'm still unsure about this task.
+Let's say I have a function `somefunc()` defined in a script somefuncscript.py.
+It can be imported with 
+
+```
+from somefuncscript import somefunc
+```
+
+Note the omission of a file extension.
+
+Strange behavior includes: 
+
+1. loading other functions defined in the script 
+2. challenges in loading functions saved in a different directory
+
+On point 2, why can't we just include a file path, like below?
+
+```
+from ../funcs/somefuncscript import somefunc
+```
+
+There is probably a good reason, but I don't know why.
+There are a couple approaches discussed online that could be used, but I think copying the script into the working directory is simplest.
+There is a function in the shutil package (for **sh**ell **util**ities?) that does this.
+
+```
+shutil.copy('../funcs/somefuncscript.py', '.')
+from somefuncscript import somefunc
+```
+
+
+
+
