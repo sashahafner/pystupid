@@ -34,12 +34,17 @@ More on use of colon in Python here: <https://www.askpython.com/python/examples/
 
 # Debugging
 The `breakpoint()` function is available in v3.7 and up.
-It seems to work well if the script is evaluated in the console e.g., `python3 somescript.py`.
+It seems to work well if the script is evaluated in the shell e.g., 
+
+```
+python3 somescript.py
+```
+
 Even if somescript.py loads the function that is to be debugged from another script (i.e., `breakpoint()` is in a separate function definition script) this works.
-If the work is done directly in Python, `breakpoint()` seems to be completely ignored.
+If the work is done directly in a Python console, `breakpoint()` seems to be completely ignored.
 This differs from `browser()` behavior in R.
 
-To step through a script, use this in the console:
+To step through a script without using `breakpoint()`, use this in the shell:
 
 ```
 python3 -m pdb somescript.py 
