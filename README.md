@@ -84,10 +84,16 @@ shutil.copy('../funcs/somefuncscript.py', '.')
 from somefuncscript import somefunc
 ```
 
-# No `&&` or `||`
-Actually in Python this behavior (evaluating following expressions depending on current one) is available but through `and` and `or`.
+# Comparisons
+In Python the behavior that R gives for `&&` or `||` (evaluating following expressions depending on current one) is available but through `and` and `or`.
 So element-by-element comes with `&` and `|`, and the preferred programming approach comes with `and` and `or`.
 See <https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not>.
+
+Note that there is an `is` operator needed, for example, checking the class of an object.
+
+```
+type(x) is 'str'
+```
 
 
 
