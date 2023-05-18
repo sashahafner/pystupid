@@ -89,7 +89,7 @@ In Python the behavior that R gives for `&&` or `||` (evaluating following expre
 So element-by-element comes with `&` and `|`, and the preferred programming approach comes with `and` and `or`.
 See <https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not>.
 
-Note that there is an `is` operator needed, for example, checking the class of an object.
+Note that there is an `is` operator needed, for example, for checking the class of an object.
 
 ```
 type(x) is 'str'
