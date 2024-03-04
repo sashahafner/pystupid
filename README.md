@@ -1,6 +1,9 @@
 # pystupid
 Some notes on Python syntax and more.
-These are on topics that are or were confusing to me, an R and Fortran user, while learning Python.
+These are on topics that are or were confusing to me, an R (and sometimes Fortran) user, while learning Python.
+
+My intention is to document topics in this README.md file.
+But presently the [issues page](https://github.com/sashahafner/pystupid/issues) has more information.
 
 # Indexing objects
 The 0 index for the first element is strange enough, but at least that matches C and probably more (some reasons for that here: <https://developerinsider.co/why-does-the-indexing-of-array-start-with-zero-in-c/>).
